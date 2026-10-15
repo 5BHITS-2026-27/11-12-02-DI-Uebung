@@ -26,17 +26,16 @@ Wie in Kapitel~\ref{chap:grundlagen} beschrieben, ...
 Die Beispieldatei zeigt die Syntax. Für eigene Aussagen passende Fachquellen verwenden. Quellen nicht erfinden; Metadaten und Seitenangaben prüfen. Mit `\autocite[23]{schluessel}` eine Seite angeben.
 
 ## 45–60 Minuten: Bild einsetzen und committen
-Bild als `bilder/aufbau.png` speichern:
+Bild im Ordner `bilder/` speichern. Das Beispiel verwendet `bilder/dog1.png`:
 ```latex
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth]{bilder/aufbau.png}
-  \caption{Aufbau des Prototyps (eigene Aufnahme)}
-  \label{fig:aufbau}
+  \includegraphics[width=0.5\textwidth]{bilder/dog1.png}
+  \caption{Beispielfoto eines Hundes}
+  \label{fig:hund}
 \end{figure}
-Abbildung~\ref{fig:aufbau} zeigt den Aufbau.
 ```
-`htbp` erlaubt LaTeX, einen passenden Platz zu wählen. Fremde Bilder benötigen einen Quellenbeleg in der Bildunterschrift.
+`[H]` setzt die Abbildung genau an dieser Stelle; dafür wird das Paket `float` verwendet. Im Text kannst du mit `Abbildung~\ref{fig:hund}` darauf verweisen. Fremde Bilder benötigen einen Quellenbeleg in der Bildunterschrift.
 Anschließend kompilieren, PDF lesen und nur die geänderten Quelldateien committen.
 
 Für den Anfang reichen Kapitel, Absätze, Listen, Bilder, Tabellen, Quellen und Verweise. Inhalt zuerst schreiben; Layoutänderungen zentral und gemeinsam abstimmen.
